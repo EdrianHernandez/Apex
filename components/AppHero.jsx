@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronRight, Star } from 'lucide-react';
 
-const AppHero: React.FC = () => {
+const AppHero = () => {
   return (
     <section className="relative overflow-hidden pt-12 pb-20 lg:pt-32 lg:pb-32 bg-white">
       
