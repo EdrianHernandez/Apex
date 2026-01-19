@@ -1,7 +1,7 @@
 import React from 'react';
 import { QrCode } from 'lucide-react';
 
-const DownloadSection: React.FC = () => {
+const DownloadSection = () => {
   return (
     <section className="bg-zinc-900 py-24 relative overflow-hidden text-white">
       {/* Background Decor */}
