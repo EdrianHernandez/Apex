@@ -1,16 +1,7 @@
 import React, { useRef } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
-interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  quote: string;
-  image: string;
-  rating: number;
-}
-
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
     id: 1,
     name: "Sarah Jenkins",
@@ -53,10 +44,10 @@ const testimonials: Testimonial[] = [
   }
 ];
 
-const UserTestimonials: React.FC = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+const UserTestimonials = () => {
+  const scrollContainerRef = useRef(null);
 
-  const scroll = (direction: 'left' | 'right') => {
+  const scroll = (direction) => {
     if (scrollContainerRef.current) {
       const { current } = scrollContainerRef;
       const scrollAmount = direction === 'left' ? -350 : 350;
