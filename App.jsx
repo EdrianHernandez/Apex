@@ -1,11 +1,11 @@
 import React from 'react';
-import AppHero from './components/AppHero';
-import FeatureBentoGrid from './components/FeatureBentoGrid';
-import UserTestimonials from './components/UserTestimonials';
-import DownloadSection from './components/DownloadSection';
+import AppHero from './components/AppHero.js';
+import FeatureBentoGrid from './components/FeatureBentoGrid.jsx';
+import UserTestimonials from './components/UserTestimonials.jsx';
+import DownloadSection from './components/DownloadSection.jsx';
 import { Menu, X } from 'lucide-react';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
   );
 };
 
-const Footer: React.FC = () => (
+const Footer = () => (
   <footer className="bg-zinc-50 border-t border-zinc-100 pt-16 pb-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
       <div className="flex items-center gap-2 mb-4">
@@ -71,7 +71,7 @@ const Footer: React.FC = () => (
   </footer>
 );
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="min-h-screen bg-white selection:bg-zinc-100 selection:text-black">
       <Navbar />
