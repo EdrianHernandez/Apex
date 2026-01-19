@@ -1,7 +1,7 @@
 import React from 'react';
 import { WifiOff, Cloud, ShieldCheck, Zap, Layers, Smartphone } from 'lucide-react';
 
-const FeatureBentoGrid: React.FC = () => {
+const FeatureBentoGrid = () => {
   return (
     <section id="features" className="py-24 bg-zinc-50 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
