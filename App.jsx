@@ -1,5 +1,5 @@
 import React from 'react';
-import AppHero from './components/AppHero.js';
+import AppHero from './components/AppHero.jsx';
 import FeatureBentoGrid from './components/FeatureBentoGrid.jsx';
 import UserTestimonials from './components/UserTestimonials.jsx';
 import DownloadSection from './components/DownloadSection.jsx';
